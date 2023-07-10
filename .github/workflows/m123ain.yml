@@ -26,5 +26,5 @@ jobs:
       - name: python artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: my-artifact 
-          path: my_files.zip 
+          name: my-artifact ${{ matrix.node-version }}
+          path: ${{ github.workspace }}
