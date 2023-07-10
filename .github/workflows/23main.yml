@@ -22,7 +22,7 @@ jobs:
         run: python -c "import sys; print(sys.version)"
         
       - name: zip files
-        run: zip -r my_files.zip /Desktop
+        run:  zip -r my_files.zip . -i /Desktop
         
       - name: upload Artifact
         uses: actions/upload-artifact@v3
