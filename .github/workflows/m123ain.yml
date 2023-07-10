@@ -21,5 +21,5 @@ jobs:
       - name: python artifacts
         uses: actions/upload-articats@v3
         with:
-          name: my-artifact ${{ martix.node-version }}
+          name: my-artifact ${{ matrix.node-version }}
           path: ${{ github.workspace }}
