@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Display Python version
-        run: python -c "import sys; print(sys.version) " > ${{ matrix.python-version }} file.txt
+        run: python -c "import sys; print(sys.version) " > ${{ matrix.python-version }}file.txt
         
         
       - name: zip files
